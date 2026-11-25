@@ -135,7 +135,7 @@ export default function Navbar() {
           <img
             src="/assets/logo.png"
             alt="INTRAMEDIKA"
-            className="h-10 lg:h-[3vw] w-auto mix-blend-multiply"
+            className="h-16 lg:h-[5vw] w-auto mix-blend-multiply"
           />
         </Link>
 
