@@ -130,26 +130,13 @@ export default function Navbar() {
   return (
     <header id="topbar" className={`fixed top-0 inset-x-0 z-40${scrolled ? " scrolled" : ""}`}>
       <div className="relative px-5 lg:px-[7vw] pt-7 pb-4 lg:pt-[1.7vw] lg:pb-[1.5vw] flex items-center justify-between gap-4">
-        <Link
-          href="/"
-          onClick={toTop}
-          className="relative inline-block font-black italic text-2xl lg:text-[1.75vw] leading-none tracking-tight bg-gradient-to-r from-[#1a24b8] via-[#1f5fd0] to-[#14b385] bg-clip-text text-transparent pr-1"
-          aria-label="INTRAMEDIKA"
-        >
-          INTRAMEDIKA
-          <span className="absolute -top-[0.75em] left-[77%] w-[0.62em] h-[0.62em] rounded-[3px] rotate-12 bg-red-600 grid place-items-center not-italic">
-            <svg
-              viewBox="0 0 24 24"
-              className="w-[75%] h-[75%]"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M3 12h4l3-7 4 14 3-7h4" />
-            </svg>
-          </span>
+        <Link href="/" onClick={toTop} aria-label="INTRAMEDIKA">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/logo.png"
+            alt="INTRAMEDIKA"
+            className="h-10 lg:h-[3vw] w-auto mix-blend-multiply"
+          />
         </Link>
 
         <nav
