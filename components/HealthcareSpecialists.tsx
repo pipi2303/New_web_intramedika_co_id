@@ -67,7 +67,7 @@ export default function HealthcareSpecialists() {
                   <span aria-hidden="true">{initials(s.name)}</span>
                   {s.photo && (
                     // eslint-disable-next-line @next/next/no-img-element -- foto kecil statis, static export tanpa optimasi gambar
-                    <img src={s.photo} alt={`Foto ${s.name}`} className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={s.photo} alt={`Foto ${s.name}`} className="absolute inset-0 w-full h-full object-cover object-top" />
                   )}
                 </div>
                 <div className="min-w-0">

@@ -80,7 +80,7 @@ export default function Direksi() {
                   <span aria-hidden="true">{initials(d.name)}</span>
                   {d.photo && (
                     // eslint-disable-next-line @next/next/no-img-element -- foto kecil statis, static export tanpa optimasi gambar
-                    <img src={d.photo} alt={`Foto ${d.name}`} className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={d.photo} alt={`Foto ${d.name}`} className="absolute inset-0 w-full h-full object-cover object-top" />
                   )}
                 </div>
                 <div className="min-w-0">
