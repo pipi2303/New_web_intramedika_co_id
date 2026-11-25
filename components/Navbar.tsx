@@ -18,6 +18,7 @@ const MENU = [
 ] as const;
 
 const DIREKSI = "/jajaran-direksi/";
+const SPECIALISTS = "/jajaran-healthcare-specialists/";
 
 export default function Navbar() {
   const { t, lang, setLang } = useLang();
@@ -26,6 +27,7 @@ export default function Navbar() {
   const path = pathname.replace(/\/$/, "") || "/";
   const isHome = path === "/";
   const isDireksi = path === "/jajaran-direksi";
+  const isSpecialists = path === "/jajaran-healthcare-specialists";
 
   const [active, setActive] = useState<string | null>("beranda");
   const [scrolled, setScrolled] = useState(false);
@@ -51,17 +53,18 @@ export default function Navbar() {
 
   // Scrollspy (hanya di halaman utama) + latar navbar saat di-scroll
   useEffect(() => {
-    const currentActive = isDireksi ? "profil" : isHome ? "beranda" : null;
+    const isProfilPage = isDireksi || isSpecialists;
+    const currentActive = isProfilPage ? "profil" : isHome ? "beranda" : null;
     if (!isHome) {
       // eslint-disable-next-line react-hooks/set-state-in-effect -- sinkron dengan rute aktif
       setActive(currentActive);
-      setScrolled(isDireksi || window.scrollY > 10);
-      if (isDireksi) return;
+      setScrolled(isProfilPage || window.scrollY > 10);
+      if (isProfilPage) return;
     }
     let tick = false;
     const update = () => {
       tick = false;
-      setScrolled(isDireksi || window.scrollY > 10);
+      setScrolled(isProfilPage || window.scrollY > 10);
       if (!isHome) return;
       const bar = document.getElementById("topbar");
       const y = window.scrollY + (bar?.offsetHeight ?? 0) + window.innerHeight * 0.25;
@@ -88,7 +91,7 @@ export default function Navbar() {
     update();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome, isDireksi]);
+  }, [isHome, isDireksi, isSpecialists]);
 
   useEffect(() => {
     moveLine();
@@ -175,6 +178,9 @@ export default function Navbar() {
             <div className="ddmenu">
               <Link href={DIREKSI} className={`ddi${isDireksi ? " active" : ""}`}>
                 {t("Jajaran Managemen")}
+              </Link>
+              <Link href={SPECIALISTS} className={`ddi${isSpecialists ? " active" : ""}`}>
+                {t("Jajaran Healthcare Specialists")}
               </Link>
             </div>
           </div>

@@ -163,6 +163,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/jajaran-healthcare-specialists/" className="fl">
+                  {t("Jajaran Healthcare Specialists")}
+                </Link>
+              </li>
+              <li>
                 <Link href="/#s13" className="fl">
                   {t("Mengapa Intramedika")}
                 </Link>

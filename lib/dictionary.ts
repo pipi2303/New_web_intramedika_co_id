@@ -705,6 +705,16 @@ export const EN: Record<string, string> = {
   "Konsultan Berbagai Proyek Implementasi HIS": "Consultant for Various Hospital Information System (HIS) Implementation Project",
   "VP Strategi & Kemitraan Ekosistem Layanan Kesehatan": "VP Healthcare Ecosystems Strategy & Partnership",
   "Eks-Product Manager di Peralatan Kesehatan": "Former Product Manager at Health Equipments",
+  "Jajaran Healthcare Specialists": "Healthcare Specialists",
+  "Para spesialis kesehatan kami yang mendukung transformasi layanan kesehatan digital Indonesia.":
+    "Our healthcare specialists supporting Indonesia's digital health transformation.",
+  "Penasihat Inovasi Strategis Layanan Kesehatan – Dewan Keunggulan Kesehatan Intramedika":
+    "Strategic Healthcare Innovation Advisor – Intramedika Healthcare Excellence Board",
+  "Dewan Keunggulan Kesehatan Intramedika": "Intramedika Healthcare Excellence Board",
+  "Peneliti, Dosen, Penulis, Dokter Medis": "Researcher, Lecturer, Author, Medical Doctor",
+  "Dokter Medis": "Medical Doctor",
+  "Spesialis Kedokteran Penerbangan": "Aviation Medicine Specialist",
+  "Koordinator MCU": "MCU Coordinator",
   "MULAI TRANSFORMASI DIGITAL": "START YOUR DIGITAL TRANSFORMATION",
   "Siap membawa pelayanan kesehatan ke level berikutnya?": "Ready to take your healthcare services to the next level?",
   "Jadwalkan demo gratis dan lihat bagaimana Intramedika menghubungkan seluruh layanan kesehatan Anda.":
