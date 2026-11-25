@@ -11,23 +11,33 @@ type Director = {
 };
 
 const DIRECTORS: Director[] = [
-  { name: "Rivelino Hasugian", role: "Direktur Utama", experience: ["Eks-Direktur Penjualan Oracle – Teknologi"] },
   {
+    photo: "/assets/direksi/rivelino.jpg",
+    name: "Rivelino Hasugian",
+    role: "Direktur Utama",
+    experience: ["Eks-Direktur Oracle – Teknologi"],
+  },
+  {
+    photo: "/assets/direksi/bambang.jpg",
     name: "Bambang H. Purnomo",
     role: "Kepala Pengembangan Bisnis Strategis",
-    experience: ["Eks-Direktur Deloitte & KPMG", "Eks-Presiden Direktur Sigma Solusi Integrasi (TelkomSigma)"],
+    experience: [
+      "Eks-Direktur Konsultasi Deloitte",
+      "Eks-Direktur Layanan Advisory KPMG Indonesia",
+      "Eks-Presiden Direktur Sigma Solusi Integrasi (Telkom Group)",
+    ],
   },
   {
+    photo: "/assets/direksi/tavri.jpg",
     name: "Tavri Deviyan",
     role: "Kepala Informatika Kesehatan",
-    experience: ["Eks-CIO Rumah Sakit Pondok Indah", "Konsultan Berbagai Proyek Implementasi Sistem Informasi Rumah Sakit (SIMRS)"],
+    experience: [
+      "Eks-CIO Rumah Sakit Pondok Indah",
+      "Konsultan Berbagai Proyek Implementasi HIS",
+    ],
   },
   {
-    name: "Dr. dr. Lucy Widasari, M.Si",
-    role: "Penasihat Inovasi Strategis Layanan Kesehatan – Dewan Keunggulan Kesehatan Intramedika",
-    experience: ["Dokter, Peneliti, Dosen, Penulis"],
-  },
-  {
+    photo: "/assets/direksi/abiathar.jpg",
     name: "dr. Abiathar, M.Sc",
     role: "VP Strategi & Kemitraan Ekosistem Layanan Kesehatan",
     experience: ["Eks-Product Manager di Peralatan Kesehatan"],
