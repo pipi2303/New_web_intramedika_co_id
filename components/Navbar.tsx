@@ -174,7 +174,7 @@ export default function Navbar() {
             </Link>
             <div className="ddmenu">
               <Link href={DIREKSI} className={`ddi${isDireksi ? " active" : ""}`}>
-                {t("Jajaran Direksi")}
+                {t("Jajaran Managemen")}
               </Link>
             </div>
           </div>

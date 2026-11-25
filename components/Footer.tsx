@@ -159,7 +159,7 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-[15px]">
               <li>
                 <Link href="/jajaran-direksi/" className="fl">
-                  {t("Jajaran Direksi")}
+                  {t("Jajaran Managemen")}
                 </Link>
               </li>
               <li>

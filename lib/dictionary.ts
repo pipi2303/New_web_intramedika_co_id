@@ -6,7 +6,7 @@
 export const EN: Record<string, string> = {
   Beranda: "Home",
   Profil: "Profile",
-  "Jajaran Direksi": "Board of Directors",
+  "Jajaran Managemen": "Board of Management",
   Solusi: "Solutions",
   Ekosistem: "Ecosystem",
   "AI Kesehatan": "AI Healthcare",

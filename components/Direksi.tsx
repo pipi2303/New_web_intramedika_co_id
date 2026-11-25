@@ -63,7 +63,7 @@ export default function Direksi() {
           <span className="inline-block text-xs md:text-sm font-extrabold tracking-[.18em] px-5 py-1.5 rounded-full bg-green-100 text-g9 border border-g6/30">
             {t("PROFIL PERUSAHAAN")}
           </span>{" "}
-          <h1 className="mt-5 text-4xl md:text-5xl font-extrabold text-[#1d2b6b] tracking-tight">{t("Jajaran Direksi")}</h1>
+          <h1 className="mt-5 text-4xl md:text-5xl font-extrabold text-[#1d2b6b] tracking-tight">{t("Jajaran Managemen")}</h1>
           <p className="mt-5 text-base md:text-lg text-slate-600">
             {t("Pemimpin berpengalaman yang mendorong transformasi digital kesehatan Indonesia.")}
           </p>
