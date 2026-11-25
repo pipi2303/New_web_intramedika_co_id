@@ -17,11 +17,13 @@ const SPECIALISTS: Specialist[] = [
     experience: ["Peneliti, Dosen, Penulis, Dokter Medis"],
   },
   {
+    photo: "/assets/Tommy.png",
     name: "dr. Tommy P Sibuea, Sp. PD, FINASIM",
     role: "Penasihat Inovasi Strategis Layanan Kesehatan – Dewan Keunggulan Kesehatan Intramedika",
     experience: ["Dokter Medis"],
   },
   {
+    photo: "/assets/Golda.png",
     name: "dr. Golda Naomi, Sp. KP",
     role: "Dewan Keunggulan Kesehatan Intramedika",
     experience: ["Spesialis Kedokteran Penerbangan", "Koordinator MCU", "Dokter Medis"],
